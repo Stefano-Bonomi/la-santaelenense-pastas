@@ -28,6 +28,12 @@ header nav ul li a {
     color: rgb(235, 193, 146) !important;
     font-size: 25px !important;
     font-weight: 700 !important;
+    transition: 0.2s !important;
+}
+
+header nav ul li a:hover {
+    font-size: 28px !important;
+    font-weight: 900 !important;
 }
 
 .navbar-toggler {
@@ -55,6 +61,7 @@ header nav ul li a {
 
 .hero {
     display: flex;
+    align-items: center;
 }
 
 .hero-article {
@@ -215,11 +222,12 @@ footer {
 
 /**-------------------ASIDE-PASTAS-------------------*/
 
-.titulo-de-pastas-h2{
+.titulo-de-pastas-h2 {
     background-color: #46160d;
-    
+
 }
-.titulo-de-pastas-h2 h2{
+
+.titulo-de-pastas-h2 h2 {
     color: #ebc192;
     text-align: center;
     align-items: center;
@@ -227,6 +235,7 @@ footer {
     font-weight: 500;
     padding: 0.2rem;
 }
+
 .grid-conteiner-pastas {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr;
@@ -281,4 +290,42 @@ footer {
     font-size: 25px;
     font-weight: 500;
     color: rgb(70, 22, 13);
+}
+
+
+/*-------------------@media-------------------*/
+
+@media screen and (max-width:1500px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-article {
+        background-color: #46160d;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        margin: 40px;
+    }
+
+    .hero-article {
+        background-color: #46160d;
+        border-radius: 40px;
+        margin: 40px;
+    }
+
+    .hero-article-igm img {
+        width: 800px;
+        height: 560px;
+        margin: 40px;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width:890px) {
+        .hero-article-igm img {
+            display: none;
+    }
+
 }
