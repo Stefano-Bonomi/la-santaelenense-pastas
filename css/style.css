@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(235, 193, 146);
+}
+
+/**-------------------HEADER-------------------*/
+header {
+    background-color: rgb(70, 22, 13);
+    position: sticky;
+    top: 0px;
+    border-bottom: 3px solid rgb(235, 193, 146);
+    z-index: 1;
+}
+
+.img-logo {
+    width: 150px;
+    height: 150px;
+}
+
+header nav ul li a {
+    color: rgb(235, 193, 146) !important;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+}
+
+.navbar-toggler {
+    border: 2px solid rgb(235, 193, 146);
+}
+
+.boton {
+    border: 2px solid rgb(235, 193, 146);
+    color: rgb(235, 193, 146);
+    font-size: var;
+}
+
+.boton:hover {
+    background-color: rgb(235, 193, 146);
+    color: black;
+}
+
+/*?-------------------MAIN-------------------*/
+.main-fondo {
+    background-image: url(../img/imagen-fondo.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-article {
+    background-color: #46160d;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 40px;
+}
+
+.hero-article h1 {
+    font-size: 40px;
+    text-align: left;
+    color: rgb(235, 193, 146);
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.hero-article p {
+    text-align: left;
+    font-size: 23px;
+    font-weight: 350;
+    color: rgb(235, 193, 146);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero-article span {
+    font-weight: 600;
+}
+
+.hero-article-igm img {
+    width: 800px;
+    height: 560px;
+    margin: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.titulo-objetivos h2 span {
+    background-color: #46160d;
+    padding: 1.5rem 4rem;
+    border-radius: 30px;
+}
+
+.titulo-objetivos h2 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(235, 193, 146);
+    align-content: center;
+    margin: 40px;
+}
+
+.desglosado-objetivos {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+}
+
+.desglosado-objetivos article img {
+    height: 800px;
+    border: 2px solid rgb(70, 22, 13);
+}
+
+.desglosado-objetivos article ul {
+    background-color: #46160d;
+    height: 800px;
+    border: 2px #ebc192 solid;
+}
+
+.desglosado-objetivos article ul li {
+    color: #ebc192;
+}
+
+.desglosado-objetivos article ul li p {
+    color: #ebc192;
+    font-size: 26px;
+    padding: 1.5rem 0.4rem;
+}
+
+.titulo-cards-productos {
+    background-color: rgb(70, 22, 13);
+}
+
+.titulo-cards-productos h2 {
+    text-align: left;
+    font-size: 35px;
+    color: #ebc192;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    text-align: center;
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card {
+    background-color: #46160d;
+    margin: 20px;
+}
+
+.card-main div img {
+    width: 100%;
+    height: 220px;
+    border: 1px solid rgb(235, 193, 146);
+}
+
+.card-body h5 {
+    color: rgb(235, 193, 146);
+}
+
+.card-body p {
+    color: rgb(235, 193, 146);
+}
+
+/*!-------------------FOOTER-------------------*/
+footer {
+    background-color: rgb(70, 22, 13);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes img {
+    width: 100px;
+    height: 100px;
+}
+
+/*!-------------------MAIN-PASTAS-------------------*/
+.fondo-pastas-main {
+    background-image: url(../img/como-hacer-pasta-para-vender.jpg);
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.fondo-pastas-main h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(235, 193, 146);
+    position: relative;
+    top: 200px;
+    left: 200px;
+    background-color: rgb(70, 22, 13);
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+}
+
+
+/**-------------------ASIDE-PASTAS-------------------*/
+
+.titulo-de-pastas-h2{
+    background-color: #46160d;
+    
+}
+.titulo-de-pastas-h2 h2{
+    color: #ebc192;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0.2rem;
+}
+.grid-conteiner-pastas {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-auto-rows: 250px;
+    margin: 15px;
+    gap: 15px;
+}
+
+.grid-variedad-de-pastas {
+    border: solid 5px rgb(70, 22, 13);
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid-variedad-de-pastas img {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-variedad-de-pastas h3 {
+    font-size: 30px;
+    color: rgb(70, 22, 13);
+    background-color: rgba(70, 22, 13, 0.329);
+    text-align: left;
+    font-weight: 800;
+}
+
+.grid-variedad-de-pastas p {
+    font-size: 22px;
+    color: rgb(70, 22, 13);
+    text-align: left;
+    font-weight: 600;
+}
+
+/*?-------------------MAIN-TRAYECTORIA-------------------*/
+.texto-trayectoria {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(70, 22, 13);
+    border: 5px rgb(70, 22, 13);
+    color: rgb(235, 193, 146);
+}
+
+/**-------------------MAIN-UBICADOS-------------------*/
+.ubicados-map {
+    text-align: center;
+}
+
+.ubicados-texto {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(70, 22, 13);
+}
