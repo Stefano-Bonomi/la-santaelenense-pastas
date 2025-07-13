@@ -18,7 +18,7 @@ El sitio se compone de las siguientes páginas:
 
 ## 🛠️ Tecnologías utilizadas
 
-- **HTML5** y **CSS3** (estilos personalizados en `style.css`)
+- **HTML5** y **SASS** (estilos personalizados en `estilos.css`)
 - **Bootstrap 5.3.6** para estructura y componentes responsivos
 - Iconografía y tipografía desde recursos externos
 - Imágenes optimizadas en formato `.jpg`, `.png` y `.webp`
