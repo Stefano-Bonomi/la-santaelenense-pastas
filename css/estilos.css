@@ -23,7 +23,7 @@ header nav ul li a {
   transition: 0.2s !important;
 }
 header nav ul li a:hover {
-  font-size: 28px !important;
+  scale: 1.2;
   font-weight: 900 !important;
 }
 
@@ -38,8 +38,7 @@ header nav ul li a:hover {
   transition: 0.3s;
 }
 .navbar-toggler:hover {
-  width: 32px;
-  height: 32px;
+  scale: 1.15;
 }
 
 .boton {
