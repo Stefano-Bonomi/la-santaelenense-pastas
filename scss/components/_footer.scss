@@ -1,0 +1,58 @@
+footer {
+    background-color: $color-secundario;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .redes {
+        a {
+            img {
+                width: 100px;
+                height: 100px;
+                transition: 0.2s;
+
+                &:hover {
+                    scale: (1.20);
+                }
+            }
+        }
+    }
+
+    .dejanos-un-comentario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+
+        textarea {
+            border: 2px solid $color-Cuaternario;
+            background-color: $color-principal;
+            border-radius: 10px;
+            height: 90px;
+            width: 290px;
+
+            &:hover {
+                border: 2px solid $color-terciario;
+            }
+        }
+
+        input {
+            height: 30px;
+            width: 55px;
+            margin-top: 4px;
+            border: 2px solid $color-principal;
+            background-color: $color-secundario;
+            color: $color-principal;
+            border-radius: 10px;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $color-principal;
+                color: $color-secundario;
+            }
+        }
+    }
+}

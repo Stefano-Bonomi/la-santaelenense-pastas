@@ -1,0 +1,576 @@
+//*----------------------INDEX---------------------//
+@media screen and (max-width:1500px) {
+    .descripcion {
+        flex-direction: column;
+
+        .descripcion-article {
+            border-radius: 40px;
+        }
+
+        .descripcion-article-igm {
+            img {
+                border-radius: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1125px) {
+
+    .hero {
+        height: 500px;
+
+        h1 {
+            @include h1-decoration (30px, 800, $color-principal, $color-secundario, inline-block, center, 5% 0 10px 5%, 25px, 0.5rem 1.5rem);
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+
+    .descripcion {
+        .descripcion-article {
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .objetivos-index {
+        .img-objetivos {
+            img {
+                height: 270px;
+                width: 270px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:880px) {
+    .hero {
+        height: 400px;
+
+        h1 {
+            @include h1-decoration (25px, 800, $color-principal, $color-secundario, inline-block, center, 5% 0 10px 5%, 25px, 0.5rem 1.5rem);
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+    .descripcion {
+        .descripcion-article {
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 13px;
+                text-align: center;
+            }
+        }
+
+        .descripcion-article-igm {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .objetivos-index {
+        .titulo-objetivos {
+            .resaltado-objetivos {
+                font-size: 20px;
+            }
+        }
+
+        .img-objetivos {
+            img {
+                height: 170px;
+                width: 170px;
+            }
+        }
+    }
+
+
+    .cards-index {
+        .titulo-cards-productos {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .card-main {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .hero {
+        height: 350px;
+
+        h1 {
+            @include h1-decoration (20px, 800, $color-principal, $color-secundario, inline-block, center, 5% 0 10px 5%, 25px, 0.5rem 1.5rem);
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+
+    .descripcion {
+        .descripcion-article {
+            h2 {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 11px;
+                text-align: center;
+            }
+        }
+    }
+
+    .objetivos-index {
+        .titulo-objetivos {
+            .resaltado-objetivos {
+                font-size: 16px;
+            }
+        }
+
+        .img-objetivos {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+
+    .cards-index {
+        .titulo-cards-productos {
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+
+//*-----------------------PASTAS---------------------------//
+@media screen and (max-width:1500px) {
+
+    .fondo-pastas-main {
+        background-image: url(../img/fondo-texto-h1-pastas.jpg);
+        @include fondos-h1 (cover, no-repeat, bottom, local);
+    }
+
+    .gird-section-pastas {
+        .grid-container-pastas {
+            grid-template-columns: 1fr 3fr;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .gird-section-pastas {
+        .grid-container-pastas {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .fondo-pastas-main {
+        background-image: url(../img/fondo-texto-h1-pastas.jpg);
+        @include fondos-h1 (cover, no-repeat, bottom, local);
+        height: 350px;
+
+        h1 {
+            @include h1-decoration (33px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .gird-section-pastas {
+        .titulo-de-pastas-h2 {
+            font-size: 23px;
+        }
+
+        .grid-container-pastas {
+            grid-template-columns: 1fr 3;
+            grid-auto-rows: 200px;
+
+            .grid-variedad-de-pastas {
+                h3 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:520px) {
+    .gird-section-pastas {
+        .titulo-de-pastas-h2 {
+            font-size: 20px;
+        }
+
+        .grid-container-pastas {
+            grid-template-columns: 1fr 3fr;
+            grid-auto-rows: 120px;
+
+            .grid-variedad-de-pastas {
+                h3 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 10px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+    .fondo-pastas-main {
+        h1 {
+            @include h1-decoration (30px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .gird-section-pastas {
+        .titulo-de-pastas-h2 {
+            font-size: 20px;
+        }
+
+        .grid-container-pastas {
+            grid-template-columns: 1fr 2fr;
+            grid-auto-rows: 150px;
+
+            .grid-variedad-de-pastas {
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 9px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+
+//*-----------------------------------TRAYECTORIA--------------------------------//
+
+@media screen and (max-width:1600px) {
+    .trayectoria {
+        .texto-trayectoria {
+            font-size: 16px;
+
+            p {
+                span {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .carousel {
+        height: 100%;
+        width: 200%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .fondo-trayectoria-main {
+        h1 {
+            @include h1-decoration (40px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .trayectoria {
+        flex-direction: column;
+    }
+
+    .carousel {
+        height: 0%;
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .carousel-inner {
+        border-radius: 0px 0px 130px 130px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .trayectoria {
+        padding: 0px 40px 0px 40px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .trayectoria {
+        padding: 0px 20px 0px 20px;
+
+        .texto-trayectoria {
+            font-size: 14px;
+
+            p {
+                span {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .fondo-trayectoria-main {
+        h1 {
+            @include h1-decoration (26px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .trayectoria {
+        padding: 0px 5px 0px 5px;
+
+        .texto-trayectoria {
+            font-size: 12px;
+
+            p {
+                span {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .carousel-inner {
+        border-radius: 0px 0px 100px 100px;
+    }
+}
+
+//*-----------------------------------UBICADOS--------------------------------//
+@media screen and (max-width:1090px) {
+    .fondo-ubicados-main {
+        h1 {
+            @include h1-decoration (40px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .section-ubicados {
+        flex-direction: column;
+        align-items: center;
+
+        .ubicados-texto {
+            border-radius: 15px 130px 0px 0px;
+        }
+
+        .ubicados-map {
+            iframe {
+                border-radius: 0px 0px 15px 130px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:680px) {
+    .fondo-ubicados-main {
+        height: 400px;
+
+        h1 {
+            @include h1-decoration (35px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .section-ubicados {
+        .ubicados-texto {
+            width: 400px;
+            height: 310px;
+        }
+
+        .ubicados-map {
+            iframe {
+                width: 400px;
+                height: 310px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:470px) {
+    .section-ubicados {
+        .ubicados-texto {
+            width: 270px;
+            height: 310px;
+            border-radius: 15px 100px 0px 0px;
+        }
+
+        .ubicados-map {
+            iframe {
+                width: 270px;
+                height: 310px;
+                border-radius: 0px 0px 15px 100px;
+            }
+        }
+    }
+}
+
+//*-----------------------------------CONTACTO--------------------------------//
+
+@media screen and (max-width:1300px) {
+
+    .fondo-contacto-main {
+        h1 {
+            @include h1-decoration (40px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .section-contacto {
+        .div-contacto {
+            form {
+                input {
+                    width: 550px;
+                }
+
+                select {
+                    width: 550px;
+                }
+
+                .boton-form-contacto {
+                    margin: 40px 0 10px 80%;
+                }
+            }
+        }
+
+        .div-img-contacto {
+            .img-contacto {
+                height: 650px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .section-contacto {
+        .div-contacto {
+            form {
+                input {
+                    width: 450px;
+                    height: 35px;
+                }
+
+                select {
+                    width: 450px;
+                    height: 35px;
+                }
+
+                .boton-form-contacto {
+                    margin: 40px 0 10px 73%;
+                }
+            }
+        }
+
+        .div-img-contacto {
+            .img-contacto {
+                height: 620px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .section-contacto {
+        .div-contacto {
+            form {
+                input {
+                    width: 350px;
+                    height: 25px;
+                }
+
+                select {
+                    width: 350px;
+                    height: 25px;
+                }
+
+                .boton-form-contacto {
+                    margin: 40px 0 10px 67%;
+                }
+            }
+        }
+
+        .div-img-contacto {
+            .img-contacto {
+                height: 545px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:810px) {
+    .fondo-contacto-main {
+        height: 400px;
+
+        h1 {
+            @include h1-decoration (30px, 800, $color-principal, $color-secundario, inline-block, center, 10%, 25px, 0.5rem 1.5rem);
+        }
+    }
+
+    .section-contacto {
+        .div-contacto {
+            form {
+                input {
+                    width: 320px;
+                    height: 20px;
+                }
+
+                select {
+                    width: 320px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .div-img-contacto {
+            .img-contacto {
+                height: 510px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:730px) {
+    .section-contacto {
+        padding: 10px;
+        justify-content: center;
+
+        .div-img-contacto {
+            .img-contacto {
+                display: none;
+            }
+        }
+    }
+}

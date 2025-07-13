@@ -1,0 +1,32 @@
+//* VARIABLES
+$color-principal: #e9bb87;
+$color-secundario: #46160d;
+$color-terciario: white;
+$color-Cuaternario: black;
+$color-sombras: #46160d54;
+
+//? MIXIN
+@mixin fondos-h1 ($background-size, $background-repeat, $background-position, $background-attachment) {
+    background-size: $background-size;
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-attachment: $background-attachment;
+}
+
+@mixin flex ($flex, $align, $justify) {
+    display: $flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin h1-decoration ($font-size, $font-weight, $color, $background-color, $display, $text-align, $margin, $border-radius, $padding){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    background-color: $background-color;
+    display: $display;
+    text-align: $text-align;
+    margin: $margin;
+    border-radius: $border-radius;
+    padding: $padding;
+}
